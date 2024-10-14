@@ -27,3 +27,7 @@
   | :exclamation: Exponential           | :exclamation: O(2^n)              | :exclamation: Terrible     |
   | :exclamation: Factorial             | :exclamation: O(n!)               | :exclamation: Terrible     |
 
+## Analyzing Time Complexity
+
+Analyzing the time complexity of an algorithm involves examining the number of operations it performs as the size of the input grows. An operation, in this context, refers to a basic computational step, such as a comparison or arithmetic operation.
+
