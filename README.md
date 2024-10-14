@@ -19,7 +19,7 @@
 - Comparing Big O complexity Table
   | Complexity | Big-O notation | Performance |
   |--------------|----------------|-------------|
-  | <span style="background-color: #35BA72;">Constant</span> | <span style="color: #35BA72;">O(1)</span> | <span style="background-color: #35BA72;">Excellent</span> |
+  | <span style="background-color: #35BA72;">Constant</span> | <span style="background-color: #35BA72;">O(1)</span> | <span style="background-color: #35BA72;">Excellent</span> |
   | <span style="background-color: #75C978;">Logarithmic</span> | <span style="background-color: #75C978;">O(log n)</span> | <span style="background-color: #75C978;">Good</span> |
   | <span style="background-color: #FED15C;">Linear</span> | <span style="background-color: #FED15C;">O(n)</span> | <span style="background-color: #FED15C;">Acceptable</span> |
   | <span style="background-color: #FF8E4D;">Linearithmic</span> | <span style="background-color: #FF8E4D;">O(n log n)</span> | <span style="background-color: #FF8E4D;">Bad</span> |
