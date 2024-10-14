@@ -14,13 +14,12 @@
 ## Understanding Big O Notation
 - Among the three types of asymptotic notation (Big O, Omega, and Theta) __Big O notation__ is the most commonly used because it provides an upper bound on an algorithm’s running time, representing the worst-case scenario.
 - Comparing Big O complexity Table
-  | Complexity | Big-O notation | Performance |
-  | --- | --- | --- |
-  | Constant | O(1) | Excellent |
-  | Logarithmic | O(log n) | Good |
-  | Linear | O(n) | Acceptable |
-  | Linearithmic | O(n log n) | Bad |
-  | Quadratic | O(n^2) | Terrible |
-  | Exponential | O(2^n) | Terrible |
-  | Factorial | O(n!) | Terrible |
-
+  | Complexity   | Big-O notation | Performance |
+  |--------------|----------------|-------------|
+  | Constant     | O(1)           | Excellent   |
+  | Logarithmic  | O(log n)       | Good        |
+  | Linear       | O(n)           | Acceptable  |
+  | Linearithmic | O(n log n)     | Bad         |
+  | Quadratic    | O(n^2)         | Terrible    |
+  | Exponential  | O(2^n)         | Terrible    |
+  | Factorial    | O(n!)          | Terrible    |
