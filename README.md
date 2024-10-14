@@ -17,12 +17,13 @@
 
 - Among the three types of asymptotic notation (Big O, Omega, and Theta) **Big O notation** is the most commonly used because it provides an upper bound on an algorithm’s running time, representing the worst-case scenario.
 - Comparing Big O complexity Table
-  | Complexity | Big-O notation | Performance |
-  |--------------|----------------|-------------|
-  | <span style="background-color: #35BA72;">Constant</span> | <span style="background-color: #35BA72;">O(1)</span> | <span style="background-color: #35BA72;">Excellent</span> |
-  | <span style="background-color: #75C978;">Logarithmic</span> | <span style="background-color: #75C978;">O(log n)</span> | <span style="background-color: #75C978;">Good</span> |
-  | <span style="background-color: #FED15C;">Linear</span> | <span style="background-color: #FED15C;">O(n)</span> | <span style="background-color: #FED15C;">Acceptable</span> |
-  | <span style="background-color: #FF8E4D;">Linearithmic</span> | <span style="background-color: #FF8E4D;">O(n log n)</span> | <span style="background-color: #FF8E4D;">Bad</span> |
-  | <span style="background-color: #FF5D47;">Quadratic</span> | <span style="background-color: #FF5D47;">O(n^2)</span> | <span style="background-color: #FF5D47;">Terrible</span> |
-  | <span style="background-color: #FF5D47;">Exponential</span> | <span style="background-color: #FF5D47;">O(2^n)</span> | <span style="background-color: #FF5D47;">Terrible</span> |
-  | <span style="background-color: #FF5D47;">Factorial</span> | <span style="background-color: #FF5D47;">O(n!)</span> | <span style="background-color: #FF5D47;">Terrible</span> |
+  | Complexity                          | Big-O notation                    | Performance                |
+  | ----------------------------------- | --------------------------------- | -------------------------- |
+  | :green_heart: Constant              | :green_heart: O(1)                | :green_heart: Excellent    |
+  | :white_check_mark: Logarithmic      | :white_check_mark: O(log n)       | :white_check_mark: Good    |
+  | :warning: Linear                    | :warning: O(n)                    | :warning: Acceptable       |
+  | :large_orange_diamond: Linearithmic | :large_orange_diamond: O(n log n) | :large_orange_diamond: Bad |
+  | :exclamation: Quadratic             | :exclamation: O(n^2)              | :exclamation: Terrible     |
+  | :exclamation: Exponential           | :exclamation: O(2^n)              | :exclamation: Terrible     |
+  | :exclamation: Factorial             | :exclamation: O(n!)               | :exclamation: Terrible     |
+
