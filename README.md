@@ -31,3 +31,32 @@
 
 Analyzing the time complexity of an algorithm involves examining the number of operations it performs as the size of the input grows. An operation, in this context, refers to a basic computational step, such as a comparison or arithmetic operation.
 
+### Linear Time Complexity
+In this function, the number of operations scales linearly with the size of the input array arr. Thus, this function has a time complexity of `O(n)`, where `n` is the number of elements in the array. This is known as linear time complexity.
+
+```js
+function iterateArr(arr) {
+   arr.map(item => console.log(item));
+}
+```
+
+## Quadratic Time Complexity
+Function below:
+- The nested for loops iterate over all pairs of elements, resulting in `O(n^2)` time complexity.
+- The separate for loop adds `O(n)` time complexity.
+- When combined, the total time complexity is dominated by the quadratic term, so the overall complexity is `O(n^2)`.
+```js
+function quadraticExample(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            console.log(arr[i], arr[j]);
+        }
+    }
+    for (let item of arr) {
+        console.log(item);
+    }    
+}
+
+const arr = [1, 2, 3];
+quadraticExample(arr);
+```
