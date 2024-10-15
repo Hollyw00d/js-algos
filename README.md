@@ -28,6 +28,19 @@
   | :exclamation: Exponential           | :exclamation: O(2^n)              | :exclamation: Terrible     |
   | :exclamation: Factorial             | :exclamation: O(n!)               | :exclamation: Terrible     |
 
+## Linear Time Complexity 
+
+Example below has a Big O Notation time complexity of `O(n)`, or a linear time complexity:
+```js
+function logitems(n) {
+    for(let i = 0; i < n; i++) {
+        console.log(i);
+    }
+}
+
+logitems(10);
+```
+
 ## Analyzing Time Complexity
 
 Analyzing the time complexity of an algorithm involves examining the number of operations it performs as the size of the input grows. An operation, in this context, refers to a basic computational step, such as a comparison or arithmetic operation.
