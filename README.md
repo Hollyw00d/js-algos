@@ -78,3 +78,15 @@ sortExample(['t', 'b', 'z']);
 ```
 
 Usually in computer science we only care about "log base 2 of y" of something like `log base 2 of y`. For example, "log base 2 of 8" in JavaScript is written as `Math.log2(8)` and the output of this would be an integer of `3`.
+
+## `O(2 ^ n)` Function Example
+For each value of `n`, it makes two recursive calls, leading to a total of `2 ^ n` function calls in the worst case:
+```js
+function twoToPowerOfN(n) {
+    if (n <= 1) {
+        return 1;
+    } else {
+        return func4(n - 1) + func4(n - 2);
+    }
+}
+```
