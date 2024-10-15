@@ -76,3 +76,5 @@ function sortExample(arr) {
 
 sortExample(['t', 'b', 'z']);
 ```
+
+Usually in computer science we only care about "log base 2 of y" of something like `log base 2 of y`. For example, "log base 2 of 8" in JavaScript is written as `Math.log2(8)` and the output of this would be an integer of `3`.
