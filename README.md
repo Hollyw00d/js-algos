@@ -66,3 +66,13 @@ The total time complexity is the sum of these two terms: `O(n^2+n)`. However, in
 In Big O notation, we simplify the expression by focusing on the term that grows the fastest. Therefore, `O(n^2 + n)` simplifies to `O(n^2)` because the quadratic term `n^2` dominates the linear term `n` as `n` becomes large.
 
 Thus, we can say that `O(n^2 + n)` is asymptotically equivalent to `O(n^2)`. This simplification is a standard practice in asymptotic notation to focus on the most significant term.
+
+## Built-in Functions Time Complexity
+Some JavaScript functions don't have linear time complexity, like the `sort()` function below that is used to sort arrays which has a time complexity of `O(n  log n)` (and this is the same as `O(n * log n)`):
+```js
+function sortExample(arr) {
+    return arr.sort();
+}
+
+sortExample(['t', 'b', 'z']);
+```
