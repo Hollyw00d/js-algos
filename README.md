@@ -5,7 +5,7 @@
 ![Big O Notation Graph](images/Big-O-Notation-Graphc.png)
 
 ## Ways to Practice
-
+- [Software Engineering Interviews](https://www.tryexponent.com/courses/software-engineering) ([TryExponent.com](https://www.tryexponent.com/) paid course)
 - [Use Quokka.js Pro](https://quokkajs.com/) in Visual Studio Code
 - Courses:
   - [Software Engineering Interviews](https://www.tryexponent.com/courses/software-engineering) (paid course via Exponent)
