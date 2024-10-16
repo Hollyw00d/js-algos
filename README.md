@@ -28,9 +28,12 @@
   | :exclamation: Exponential           | :exclamation: O(2^n)              | :exclamation: Terrible     |
   | :exclamation: Factorial             | :exclamation: O(n!)               | :exclamation: Terrible     |
 
-## `O(n)`: Linear Time Complexity
+## Big O `O(n)`: Linear Time Complexity
 
 The code below has a Big O time complexity of `O(n)`, or a __Linear__ time complexity. The time complexity of `O(n)` is __Good__, and not __Excellent__ like `O(1)` which is __Constant__ time complexity.
+
+Often referred to as __Proportional__.
+
 ```js
 function logitems(n) {
     for(let i = 0; i < n; i++) {
@@ -53,8 +56,10 @@ function logitems(n) {
     }    
 }
 ```
-## `O(n^2)`: Quadratic Time Complexity
+## Big O `O(n^2)`: Quadratic Time Complexity
 The code below has a Big O time complexity of `O(n^2)`, which is considered __Terrible__. Often nested loops have a Quadratic time complexity and should be avoided whenever possible, compared to a Constant time complexity (`O(1)`) or Linear time complexity (`O(n)`).
+
+Often referred to as __Loop within a Loop__.
 
 ```js
 function logitems(n) {
@@ -83,8 +88,11 @@ function logitems(n) {
 }
 ```
 
-## `O(1)`: Constant Time Complexity
-Example code below, which only has 1 operation and is referred to as __Constant__ time:
+## Big O `O(1)`: Constant Time Complexity
+Example code below, which only has 1 operation and is referred to as __Constant__ time.
+
+Often referred to as __Constant__.
+
 ```js
 function addItems(n) {
  return n + n;
@@ -95,8 +103,10 @@ Usually in JavaScript (or other programming languages) if a function has a `cons
 
 __Constant__ time is the most efficient Big O notation for time.
 
-## `O(log n)`: O of log n Time Complexity
+## Big O `O(log n)`: O of log n Time Complexity
 __O of log n__ (`O(log n)`) has __Good__ time complexity, and is the most time efficient Big O notation __EXCEPT__ for __Constant__ time complexity (`O(1)`). 
+
+Often referred to as __Divide and Conquer__.
 
 The __Binary Search__ algorithm below has __O of log n__ (`O(log n)`) time complexity, assuming that a sorted array is passed in as an argument:
 
