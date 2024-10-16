@@ -83,6 +83,18 @@ function logitems(n) {
 }
 ```
 
+## `O(n)`: Constant Time Complexity
+Example code below, which only has 1 operation and is referred to as __Constant__ time:
+```js
+function addItems(n) {
+ return n + n;
+}
+```
+
+Usually in JavaScript (or other programming languages) if a function has a `console.log` or `return` and includes __NO__ loops then the time complexity if `O(1)` or __Constant__.
+
+
+
 ---
 
 ## Analyzing Time Complexity
