@@ -2,7 +2,7 @@
 
 ## Big O Notation Graph
 
-![Big O Notation Graph](images/Big-O-Notation-Graphc.png)
+![Big-O Complexity Chart](images/big-o-complexity-chart.png)
 
 ## Ways to Practice
 - [JavaScript Data Structures & Algorithms + LEETCODE Exercises](https://www.udemy.com/course/data-structures-algorithms-javascript/) by Scott Barrett, Udemy
