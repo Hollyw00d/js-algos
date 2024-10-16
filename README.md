@@ -83,7 +83,7 @@ function logitems(n) {
 }
 ```
 
-## `O(n)`: Constant Time Complexity
+## `O(1)`: Constant Time Complexity
 Example code below, which only has 1 operation and is referred to as __Constant__ time:
 ```js
 function addItems(n) {
@@ -94,6 +94,47 @@ function addItems(n) {
 Usually in JavaScript (or other programming languages) if a function has a `console.log` or `return` and includes __NO__ loops then the time complexity if `O(1)` or __Constant__.
 
 __Constant__ time is the most efficient Big O notation for time.
+
+## `O(log n)`: O of log n Time Complexity
+__O of log n__ (`O(log n)`) has __Good__ time complexity, and is the most time efficient Big O notation __EXCEPT__ for __Constant__ time complexity (`O(1)`). 
+
+The __Binary Search__ algorithm below has __O of log n__ (`O(log n)`) time complexity, assuming that a sorted array is passed in as an argument:
+
+```js
+function binarySearch(arr, target) {
+  // Define the recursive function for binary search
+  function searchRecursive(low, high) {
+    // Base case: if the range is invalid, return -1 (not found)
+    if (low > high) {
+      return -1;
+    }
+
+    // Find the middle index
+    const mid = Math.floor((low + high) / 2);
+
+    // Check if the middle element is the target
+    if (arr[mid] === target) {
+      return mid; // Return the index of the target
+    }
+
+    // If the target is smaller than the middle element, search in the left half
+    if (target < arr[mid]) {
+      return searchRecursive(low, mid - 1);
+    }
+
+    // If the target is larger than the middle element, search in the right half
+    return searchRecursive(mid + 1, high);
+  }
+
+  // Start the search with the entire array range
+  return searchRecursive(0, arr.length - 1);
+}
+
+// Example usage:
+const sortedArray = [1, 2, 3, 4, 5, 6, 7, 8];
+const target = 1;
+console.log(`Array Value: ${target}\nArray Index: ` + binarySearch(sortedArray, target));
+```
 
 ---
 
