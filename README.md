@@ -30,15 +30,13 @@
 
 ## Linear Time Complexity 
 
-Example below has a Big O Notation time complexity of `O(n)`, or a linear time complexity:
+The code below has a Big O time complexity of `O(n)`, or a __Linear__ time complexity. The time complexity of `O(n)` is __Good__, and not __Excellent__ like `O(1)` which is __Constant__ time complexity.
 ```js
 function logitems(n) {
     for(let i = 0; i < n; i++) {
         console.log(i);
     }
 }
-
-logitems(10);
 ```
 
 ## Drop Constants
@@ -54,9 +52,21 @@ function logitems(n) {
         console.log(j);
     }    
 }
-
-logitems(3);
 ```
+## Quadratic Time Complexity
+The code below has a Big O time complexity of `O(n^2)`, which is considered __Terrible__. Often nested loops have a Quadratic time complexity and should be avoided whenever possible, compared to a Constant time complexity (`O(1)`) or Linear time complexity (`O(n)`).
+
+```js
+function logitems(n) {
+    for(let i = 0; i < n; i++) {
+        for(let j = 0; j < n; j++) {
+            console.log(i, j);
+        }   
+    } 
+}
+```
+
+---
 
 ## Analyzing Time Complexity
 
