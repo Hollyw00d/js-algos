@@ -167,6 +167,56 @@ function logItems(a, b) {
 logItems(3, 10);
 ```
 
+## Big O: Arrays
+
+### `push` and `pop` Array Methods: `O(1)`
+`push` and `pop` array methods (see code below) have a __Constant__ time complexity (`O(1)`) as the other array elements don't need to be re-indexed.
+
+__`push` Example__
+```js
+const arr = [11, 3, 23];
+// Output: [11, 3, 23]
+console.log(arr);
+arr.push(17);
+// Output: [11, 3, 23, 17]
+console.log(arr);
+```
+
+__`pop` Example__
+```js
+const arr = [11, 3, 23];
+// Output: [11, 3, 23]
+console.log(arr);
+arr.pop(23);
+// Output: [11, 3]
+console.log(arr);
+```
+
+### `shift` and `unshift` Array Methods: `O(n)`
+`shift` and `unshift` array methods (see code below) have a __Linear__ time complexity (`O(n)`) as the other array elements __DO__ need to be re-indexed.
+
+__`shift` Example__
+The 1st array element (with an index of `0`), is removed and all other array elements are re-indexed:
+```js
+const arr = [11, 3, 23];
+// Output: [11, 3, 23]
+console.log(arr);
+arr.shift(11);
+// Output: [3, 23]
+console.log(arr);
+```
+
+__`unshift` Example__
+A new element is added as the 1st array element (with an index of `0`), and all other array elements are re-indexed:
+```js
+const arr = [11, 3, 23];
+// Output: [11, 3, 23]
+console.log(arr);
+arr.unshift(17);
+// Output: [17, 11, 3, 23]
+console.log(arr);
+```
+
 ---
 
 ## Analyzing Time Complexity
