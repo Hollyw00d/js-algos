@@ -41,6 +41,23 @@ function logitems(n) {
 logitems(10);
 ```
 
+## Drop Constants
+The code below has a Big O time complexity of `O(2n)`. However, in Big O notation it's common to drop constants so it's commonly said the code below has a Big O time complexity of `O(n)` and __NOT__ `O(2n)`.
+
+```js
+function logitems(n) {
+    for(let i = 0; i < n; i++) {
+        console.log(i);
+    }
+
+    for(let j = 0; j < n; j++) {
+        console.log(j);
+    }    
+}
+
+logitems(3);
+```
+
 ## Analyzing Time Complexity
 
 Analyzing the time complexity of an algorithm involves examining the number of operations it performs as the size of the input grows. An operation, in this context, refers to a basic computational step, such as a comparison or arithmetic operation.
