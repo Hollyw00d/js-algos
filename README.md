@@ -28,7 +28,7 @@
   | :exclamation: Exponential           | :exclamation: O(2^n)              | :exclamation: Terrible     |
   | :exclamation: Factorial             | :exclamation: O(n!)               | :exclamation: Terrible     |
 
-## Linear Time Complexity 
+## `O(n)`: Linear Time Complexity
 
 The code below has a Big O time complexity of `O(n)`, or a __Linear__ time complexity. The time complexity of `O(n)` is __Good__, and not __Excellent__ like `O(1)` which is __Constant__ time complexity.
 ```js
@@ -53,7 +53,7 @@ function logitems(n) {
     }    
 }
 ```
-## Quadratic Time Complexity
+## `O(n^2)`: Quadratic Time Complexity
 The code below has a Big O time complexity of `O(n^2)`, which is considered __Terrible__. Often nested loops have a Quadratic time complexity and should be avoided whenever possible, compared to a Constant time complexity (`O(1)`) or Linear time complexity (`O(n)`).
 
 ```js
