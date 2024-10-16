@@ -66,6 +66,23 @@ function logitems(n) {
 }
 ```
 
+## Drop Non-Dominants
+The code below has a Big O time complexity of `O(n^2 + n)`. However, since `n^2` is the dominant term (or shows the largest increase in time complexity) and `n` is the non-dominant term (or shows the smallest increase in time complexity), the Big O time complexity of the code below is expressed as `O(n^2)` as the non-dominant term is dropped.
+
+```js
+function logitems(n) {
+    for(let i = 0; i < n; i++) {
+        for(let j = 0; j < n; j++) {
+            console.log(i, j);
+        }   
+    } 
+
+    for(let k = 0; k < n; k++) {
+        console.log(k);
+    }       
+}
+```
+
 ---
 
 ## Analyzing Time Complexity
