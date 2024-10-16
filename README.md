@@ -136,6 +136,37 @@ const target = 1;
 console.log(`Array Value: ${target}\nArray Index: ` + binarySearch(sortedArray, target));
 ```
 
+## Big O: Different Terms for Input
+The code below is does __NOT__ have a Big O time complexity of `O(2n)` or `O(n)` simplified, as the `a` and `b` arguments may be different and __NOT__ `O(n + n)`. Instead I can say the time complexity for the code below is `O(a + b)`.
+
+```js
+function logItems(a, b) {
+    for(let i = 0; i < a; i++) {
+        console.log(i);
+    }
+
+    for(let j = 0; j < b; j++) {
+        console.log(j);
+    }
+}
+
+logItems(3, 10);
+```
+
+And the code below would have a time complexity of `O(a * b)`, and __NOT__ `O(n^2)`, as the `a` and `b` arguments may be different.
+
+```js
+function logItems(a, b) {
+    for(let i = 0; i < a; i++) {
+        for(let j = 0; j < b; j++) {
+            console.log(i, j);
+        }        
+    }
+}
+
+logItems(3, 10);
+```
+
 ---
 
 ## Analyzing Time Complexity
