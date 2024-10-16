@@ -93,7 +93,7 @@ function addItems(n) {
 
 Usually in JavaScript (or other programming languages) if a function has a `console.log` or `return` and includes __NO__ loops then the time complexity if `O(1)` or __Constant__.
 
-
+__Constant__ time is the most efficient Big O notation for time.
 
 ---
 
