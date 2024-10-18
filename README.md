@@ -1,7 +1,7 @@
 # JavaScript Algorithms
 
 ## Big O Notation Graph
-
+Source below is from [bigocheatsheet.com](https://www.bigocheatsheet.com/):
 ![Big-O Complexity Chart](images/big-o-complexity-chart.png)
 
 ## Ways to Practice
