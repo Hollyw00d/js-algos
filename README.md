@@ -227,68 +227,29 @@ arr.unshift(17);
 console.log(arr);
 ```
 
----
-
-## Analyzing Time Complexity
-
-Analyzing the time complexity of an algorithm involves examining the number of operations it performs as the size of the input grows. An operation, in this context, refers to a basic computational step, such as a comparison or arithmetic operation.
-
-### Linear Time Complexity
-In this function, the number of operations scales linearly with the size of the input array arr. Thus, this function has a time complexity of `O(n)`, where `n` is the number of elements in the array. This is known as linear time complexity.
+## Class Example
+Classes will be used for algorithms later in this README. Example class is below:
 
 ```js
-function iterateArr(arr) {
-   arr.map(item => console.log(item));
-}
-```
-
-## Quadratic Time Complexity
-Function below:
-- The nested for loops iterate over all pairs of elements, resulting in `O(n^2)` time complexity.
-- The separate for loop adds `O(n)` time complexity.
-- When combined, the total time complexity is dominated by the quadratic term, so the overall complexity is `O(n^2)`.
-```js
-function quadraticExample(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < arr.length; j++) {
-            console.log(arr[i], arr[j]);
-        }
+class Cookie {
+    constructor(color) {
+        this.color = color;
     }
-    for (let item of arr) {
-        console.log(item);
-    }    
-}
-
-const arr = [1, 2, 3];
-quadraticExample(arr);
-```
-
-The total time complexity is the sum of these two terms: `O(n^2+n)`. However, in asymptotic analysis, we are interested in the term that grows fastest as `n` becomes very large. As `n` increases, `n^2`grows much faster than `n`.
-
-In Big O notation, we simplify the expression by focusing on the term that grows the fastest. Therefore, `O(n^2 + n)` simplifies to `O(n^2)` because the quadratic term `n^2` dominates the linear term `n` as `n` becomes large.
-
-Thus, we can say that `O(n^2 + n)` is asymptotically equivalent to `O(n^2)`. This simplification is a standard practice in asymptotic notation to focus on the most significant term.
-
-## Built-in Functions Time Complexity
-Some JavaScript functions don't have linear time complexity, like the `sort()` function below that is used to sort arrays which has a time complexity of `O(n  log n)` (and this is the same as `O(n * log n)`):
-```js
-function sortExample(arr) {
-    return arr.sort();
-}
-
-sortExample(['t', 'b', 'z']);
-```
-
-Usually in computer science we only care about "log base 2 of y" of something like `log base 2 of y`. For example, "log base 2 of 8" in JavaScript is written as `Math.log2(8)` and the output of this would be an integer of `3`.
-
-## `O(2 ^ n)` Function Example
-For each value of `n`, it makes two recursive calls, leading to a total of `2 ^ n` function calls in the worst case:
-```js
-function twoToPowerOfN(n) {
-    if (n <= 1) {
-        return 1;
-    } else {
-        return func4(n - 1) + func4(n - 2);
+    getColor() {
+        return this.color;
+    }
+    setColor(color) {
+        this.color = color;
     }
 }
+
+const cookieOne = new Cookie('green');
+const cookieTwo = new Cookie('blue');
+
+cookieOne.setColor('yellow');
+// Output: 'yellow'
+console.log(cookieOne.getColor());
+
+// Output: 'blue'
+console.log(cookieTwo.getColor());
 ```
