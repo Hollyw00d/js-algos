@@ -268,3 +268,12 @@ Big O Notation for Link List:
 - Linked List `shift`:
   - Big O Notation: `O(1)`
   - Removing a node from the start (similar to `shift` array method) involves moving the __Head__ to the second item and removing the original first node is `O(1)` as we won't update the indexes (unlike arrays).
+- Link List `splice`:
+  - In JavaScript, using the `splice` array method it's possible to add in a new item into an array, without removing any other items. See code below:
+  ```js
+  let months = ["January", "February", "Monday", "Tuesday"];
+  months.splice(2, 0, "March");
+
+  // Output: ["January", "February", "March", "Monday", "Tuesday"]    
+  console.log(months); 
+  ```
