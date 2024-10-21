@@ -253,3 +253,18 @@ console.log(cookieOne.getColor());
 // Output: 'blue'
 console.log(cookieTwo.getColor());
 ```
+
+## Singly Linked List
+Big O Notation for Link List:
+- Linked List `push`:
+  - Big O Notation: `O(1)`
+  - Adding a node at the end (similar to `push` array method and adding the __Tail__ to this new last item) is `O(1)` as we won't update the indexes (unlike arrays).
+- Linked List `pop`:
+  - Big O Notation: `O(n)`
+  - Remove a node at the end (similar to `pop` array method and we'll also need to move the __Tail__ to this new last item) is `O(n)`.
+- Linked List `unshift`:
+  - Big O Notation: `O(1)`
+  - Adding a node at as a new __Head__ (similar to `unshift` array method) involves adding a new node as the first node and moving the __Head__ to this new first node is `O(1)` as we won't update the indexes (unlike arrays).
+- Linked List `shift`:
+  - Big O Notation: `O(1)`
+  - Removing a node from the start (similar to `shift` array method) involves moving the __Head__ to the second item and removing the original first node is `O(1)` as we won't update the indexes (unlike arrays).
